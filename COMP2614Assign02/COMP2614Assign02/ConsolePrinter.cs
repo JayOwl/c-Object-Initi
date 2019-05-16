@@ -30,7 +30,7 @@ namespace COMP2614Assign02
 
             foreach (Contact contact in contacts)
             {
-                Console.WriteLine("{0} {1, 1}\n{2}\n{3} {4, 1} {5, 1}",
+                Console.WriteLine("{0} {1, 1}\n{2}\n{3} {4, 1}  {5, 1}",
                     contact.FirstName,
                     contact.LastName,
                     contact.Address,
@@ -44,7 +44,7 @@ namespace COMP2614Assign02
 
             foreach (Contact contact_1 in contacts)
             {
-                Console.WriteLine("{0} {1, 1}\n{2}\n{3} {4, 1} {5, 1}",
+                Console.WriteLine("{0} {1, 1}\n{2}\n{3} {4, 1}  {5, 1}",
                     contact_1.FirstName,
                     contact_1.LastName,
                     contact_1.Address,
@@ -58,7 +58,7 @@ namespace COMP2614Assign02
 
             foreach (Contact contact_2 in contacts)
             {
-                Console.WriteLine("{0} {1, 1}\n{2}\n{3} {4, 1} {5, 1}",
+                Console.WriteLine("{0} {1, 1}\n{2}\n{3} {4, 1}  {5, 1}",
                    contact_2.FirstName,
                    contact_2.LastName,
                    contact_2.Address,
