@@ -10,7 +10,6 @@ namespace COMP2614Assign02
     {
         static void Main(string[] args)
         {
-
             string firstName;
             string lastName;
             string address;
@@ -39,25 +38,25 @@ namespace COMP2614Assign02
             System.Console.Write("Whats your postal code?: ");
             postalCode = System.Console.ReadLine();
 
-            //paramater
+            //Calling Parameterized constructor
             Contact[] contact =
             {
                 new Contact(firstName, lastName, address, city, province, postalCode )
             };
 
             ConsolePrinter.PrintMembers(contact);
-            //object init
-            Contact contact_2 =
+            //Using Object Initialization
+            Contact contact_1 =
                  new Contact() { FirstName = firstName, LastName = lastName, Address = address, City = city, Province = province, PostalCode = postalCode };
 
-            //properties
-            Contact contact_3 = new Contact();
-            contact_3.FirstName = firstName;
-            contact_3.LastName = lastName;
-            contact_3.Address = address;
-            contact_3.City = city;
-            contact_3.Province = province;
-            contact_3.PostalCode = postalCode;
+            //Populate using properties 
+            Contact contact_2 = new Contact();
+            contact_2.FirstName = firstName;
+            contact_2.LastName = lastName;
+            contact_2.Address = address;
+            contact_2.City = city;
+            contact_2.Province = province;
+            contact_2.PostalCode = postalCode;
         }
     }
 }
