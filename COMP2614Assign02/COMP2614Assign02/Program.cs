@@ -20,7 +20,6 @@ namespace COMP2614Assign02
 
             Console.Title = "COMP2614 - Assignment 2 - A00838629";
 
-
             System.Console.Write("Whats your first name?: ");
             firstName = System.Console.ReadLine();
 
@@ -40,24 +39,25 @@ namespace COMP2614Assign02
             System.Console.Write("Whats your postal code?: ");
             postalCode = System.Console.ReadLine();
 
-            //paramter
-            Contact[] member =
+            //paramater
+            Contact[] contact =
             {
                 new Contact(firstName, lastName, address, city, province, postalCode )
             };
 
-            ConsolePrinter.PrintMembers(member);
+            ConsolePrinter.PrintMembers(contact);
             //object init
-            Contact member1 =
+            Contact contact_2 =
                  new Contact() { FirstName = firstName, LastName = lastName, Address = address, City = city, Province = province, PostalCode = postalCode };
 
-            Contact member3 = new Contact();
-            member3.FirstName = firstName;
-            member3.LastName = lastName;
-            member3.Address = address;
-            member3.City = city;
-            member3.Province = province;
-            member3.PostalCode = postalCode;
+            //properties
+            Contact contact_3 = new Contact();
+            contact_3.FirstName = firstName;
+            contact_3.LastName = lastName;
+            contact_3.Address = address;
+            contact_3.City = city;
+            contact_3.Province = province;
+            contact_3.PostalCode = postalCode;
         }
     }
 }

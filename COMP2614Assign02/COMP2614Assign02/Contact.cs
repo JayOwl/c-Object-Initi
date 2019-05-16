@@ -67,6 +67,5 @@ namespace COMP2614Assign02
         {
             return string.Format("LastName: {0} FirstName {1}", lastName, firstName);
         }
-
     }
 }
